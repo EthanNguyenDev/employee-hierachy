@@ -7,7 +7,7 @@ import time
 start_time = time.time()
 
 dir = './'
-filePath = os.path.join(dir, 'Python_trial data.xlsx')
+filePath = os.path.join(dir, 'Input.xlsx')
 df = pd.read_excel(filePath)
 
 def search_manager(target_column, new_column):
@@ -27,5 +27,5 @@ search_manager('l2', 'l3')
 #search_manager('l7', 'l8')
 #search_manager('l8', 'l9')
 
-df.to_excel("output.xlsx")
+df.to_excel("Output1.xlsx")
 print("--- %s seconds ---" % (time.time() - start_time))
